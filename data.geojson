@@ -1,0 +1,257 @@
+var geojson = {
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.768524,
+                    10.032762
+                ]
+            },
+            "properties": {
+                "name": "H",
+                "id": "3"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.769642,
+                    10.0279603
+                ]
+            },
+            "properties": {
+                "name": "F",
+                "id": "2"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.770709,
+                    10.025775
+                ]
+            },
+            "properties": {
+                "name": "E",
+                "id": "3"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.769479,
+                    10.036926
+                ]
+            },
+            "properties": {
+                "name": "A",
+                "id": "4"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.766841,
+                    10.033389
+                ]
+            },
+            "properties": {
+                "name": "A",
+                "id": "4"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.765205,
+                    10.036075
+                ]
+            },
+            "properties": {
+                "name": "B",
+                "id": "1"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.774116,
+                    10.028822
+                ]
+            },
+            "properties": {
+                "name": "C",
+                "id": "3"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.765136,
+                    10.034348
+                ]
+            },
+            "properties": {
+                "name": "C",
+                "id": "3"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.764278,
+                    10.044915
+                ]
+            },
+            "properties": {
+                "name": "Nguy\u1ec5n Th\u1ecb Hu\u1ef3nh Nga",
+                "id": "2"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.764278,
+                    10.044915
+                ]
+            },
+            "properties": {
+                "name": "Nguy\u1ec5n Th\u1ecb Hu\u1ef3nh ",
+                "id": "1"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.755646,
+                    10.044915
+                ]
+            },
+            "properties": {
+                "name": "a",
+                "id": "2"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.751038,
+                    10.032662
+                ]
+            },
+            "properties": {
+                "name": "a",
+                "id": "1"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.764814,
+                    10.027713
+                ]
+            },
+            "properties": {
+                "name": "Nguy\u1ec5n Th\u1ecb Hu\u1ef3nh Nga",
+                "id": "1"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.759235,
+                    10.035115
+                ]
+            },
+            "properties": {
+                "name": "a",
+                "id": "3"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.759235,
+                    10.035115
+                ]
+            },
+            "properties": {
+                "name": "a",
+                "id": "3"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.76078,
+                    10.030337
+                ]
+            },
+            "properties": {
+                "name": "Nguy\u1ec5n Th\u1ecb Hu\u1ef3nh ",
+                "id": "3"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.754739,
+                    10.03204
+                ]
+            },
+            "properties": {
+                "name": "Nguy\u1ec5n Th\u1ecb Hu\u1ef3nh Nga",
+                "id": "1"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.747144,
+                    10.031997
+                ]
+            },
+            "properties": {
+                "name": "tr\u1ea1m 1",
+                "id": "4"
+            }
+        }
+    ]
+};

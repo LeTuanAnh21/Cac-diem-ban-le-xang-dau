@@ -1,0 +1,108 @@
+<html>
+<head>
+    <title>Bản đồ</title>
+   
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="leaflet/leaflet.css">
+    <script src="leaflet/leaflet.js"></script>
+    <script src="leaflet/leaflet-heat.js"></script>
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <link rel="stylesheet" href="leaflet/leaflet-routing-machine.css">
+    <script src="leaflet/leaflet-routing-machine.js"></script>
+
+   
+    
+    
+</head>
+<body>
+
+ 
+<div id="left"></div>
+<div id="map"></div>
+<div id="right"></div>
+    <script>
+          
+var mapOptions = {
+    center: [10.0279603,105.7664918],
+    zoom: 14
+    };
+    
+var map = L.map('map').setView([10.0279603,105.7664918], 13);
+var tiles =  L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
+  maxZoom: 19,
+  subdomains:['mt0']
+}).addTo(map);
+
+var greenIcon = L.icon({
+    iconUrl: 'logo.png',
+    iconSize:     [45, 45], // size of the icon
+});
+var Icon = L.icon({
+    iconUrl: 'giphy.gif',
+    iconSize:     [45, 60], // size of the icon
+});
+var Iconnew = L.icon({
+    iconUrl: 'maker.png',
+    iconSize:     [45, 60], // size of the icon
+});
+
+
+
+var marker = new L.marker([10.017854992838897, 105.78657808140164], {title: "Công Ty Dịch Vụ Xăng Dầu Petrolimex Cần Thơ",icon: Iconnew, alt: "Công Ty Dịch Vụ Xăng Dầu Petrolimex Cần Thơ"});
+marker.addTo(map);
+marker.bindPopup("<b>Công Ty Dịch Vụ Xăng Dầu Petrolimex Cần Thơ</b><br>"+ 
+  "<img src='leaflet/images/petrolimexCT.jpg' width='300' height='200'>");
+
+
+  var marker = L.marker([21.02014554822514, 105.784259312448]).addTo(map);
+var inforWindown = L.popup({ closeOnClick: false})
+  .setLatLng(marker.getLatLng())
+  .setContent('"<b>Hello Everyone</b> <br> Hello World!!!!"');
+  marker.bindPopup(inforWindown);
+  inforWindown.openOn(map);
+  marker.openPopup();
+inforWindown.openOn(map);
+//Bài tập 6
+var marker1 = new L.marker([10.044866642488396, 105.78057256831329], {title: "Cửa hàng Xăng dầu Số 5_Petrolimex Cần Thơ",icon: Iconnew, alt: "Công Ty Dịch Vụ Xăng Dầu Petrolimex Cần Thơ"});
+ marker1.addTo(map);
+ marker1.bindPopup("<b>Cửa hàng Xăng dầu Số 5_Petrolimex Cần Thơ</b><br>"+ 
+  "<img src='leaflet/images/petro5.jpg' width='200' height='200'>");
+
+var marker2 = new L.marker([10.044630902951457, 105.73496963762973], {title: "Cửa Hàng Xăng dầu Petrolimex số 9",icon: Iconnew, alt: "Công Ty Dịch Vụ Xăng Dầu Petrolimex Cần Thơ"});
+ marker2.addTo(map);
+ marker2.bindPopup("<b>Cửa Hàng Xăng dầu Petrolimex số 9</b><br>"+ 
+  "<img src='leaflet/images/petro9.jpg' width='200' height='200'>");
+
+ var marker3 = new L.marker([10.015620984013566, 105.75992829899684], {title: "Cửa Hàng Xăng Dầu Số 10 - Petrolimex Cần Thơ",icon: Iconnew, alt: "Công Ty Dịch Vụ Xăng Dầu Petrolimex Cần Thơ"});
+ marker3.addTo(map);
+ marker3.bindPopup("<b>Cửa Hàng Xăng Dầu Số 10 - Petrolimex Cần Thơ</b><br>"+ 
+  "<img src='leaflet/images/petro10.jpg' width='200' height='200'>");
+
+  
+ var marker4 = new L.marker([10.01029601279167, 105.75147397666629], {title: "Cửa Hàng Xăng Dầu Số 6 - Petrolimex Cần Thơ",icon: Iconnew, alt: "Công Ty Dịch Vụ Xăng Dầu Petrolimex Cần Thơ"});
+ marker4.addTo(map);
+ marker4.bindPopup("<b>Cửa Hàng Xăng Dầu Số 6 - Petrolimex Cần Thơ</b><br>"+ 
+  "<img src='leaflet/images/petro6.jpg' width='200' height='200'>");
+
+
+
+//Bài tập 9
+//Thay thế marker mặc định của chức năng tìm kiếm vị trí của một địa điểm.
+var geocoder = L.Control.Geocoder.nominatim();
+var control = L.Control.geocoder({
+defaultMarkGeocode: false,
+geocoder: geocoder
+}).on('markgeocode', function(e) {
+var latlng = e.geocode.center;
+var name = e.geocode.name;
+var marker = L.marker(latlng,{icon: Iconnew, title: name}).addTo(map);
+marker.bindPopup(name).openPopup();
+map.fitBounds(e.geocode.bbox);
+})
+.addTo(map);
+
+    </script>
+</body>
+</html>
